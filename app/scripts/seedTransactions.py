@@ -1,6 +1,6 @@
 from datetime import datetime
 from pytz import timezone
-from ..investingcore.controller.db_updates import buy, sell
+from ..investingcore.controller.db_updates import buy, sell  # remove leading .. before running script
 
 est = timezone('EST')
 
@@ -31,11 +31,11 @@ buy(symbol='MDYV', quantity=1, date=datetime(2020,  1,  3, 12, 0, tzinfo=est), p
 buy(symbol='MDYV', quantity=10, date=datetime(2019, 3, 23, 12, 0, tzinfo=est), price=30.00)
 
 # SPYD
-buy(symbol='MDYV', quantity=1, date=datetime(2019,  7,  2, 12, 0, tzinfo=est), price=37.95)
-buy(symbol='MDYV', quantity=4, date=datetime(2019,  7, 31, 12, 0, tzinfo=est), price=37.89)
-buy(symbol='MDYV', quantity=4, date=datetime(2019, 10,  8, 12, 0, tzinfo=est), price=36.64)
-buy(symbol='MDYV', quantity=3, date=datetime(2019, 12, 30, 12, 0, tzinfo=est), price=39.30)
-buy(symbol='MDYV', quantity=16, date=datetime(2019, 3, 23, 12, 0, tzinfo=est), price=22.00)
+buy(symbol='SPYD', quantity=1, date=datetime(2019,  7,  2, 12, 0, tzinfo=est), price=37.95)
+buy(symbol='SPYD', quantity=4, date=datetime(2019,  7, 31, 12, 0, tzinfo=est), price=37.89)
+buy(symbol='SPYD', quantity=4, date=datetime(2019, 10,  8, 12, 0, tzinfo=est), price=36.64)
+buy(symbol='SPYD', quantity=3, date=datetime(2019, 12, 30, 12, 0, tzinfo=est), price=39.30)
+buy(symbol='SPYD', quantity=16, date=datetime(2019, 3, 23, 12, 0, tzinfo=est), price=22.00)
 
 
 
